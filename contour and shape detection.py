@@ -1,8 +1,6 @@
 import cv2
 import numpy as np
 
-##############
-#from chapter 6.
 def stackImages(scale,imgArray):
     rows = len(imgArray)
     cols = len(imgArray[0])
@@ -63,9 +61,6 @@ def getContours(img):
             cv2.putText(imgContour, objectType,
                         (x+(w//2)-10, y+(h//2)-10), cv2.FONT_HERSHEY_COMPLEX, 0.7,
                         (0,0,0), 2)
-
-
-
 
 path = 'image/shapes.jpg'
 img = cv2.imread(path)
